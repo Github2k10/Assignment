@@ -15,7 +15,7 @@ public class FindingTheMaximumElement {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter elements: ");
+        System.out.print("Enter space separated elements(ex; 34 56 23): ");
         int[] numbs = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int maxNumber = findMax(numbs);
 
