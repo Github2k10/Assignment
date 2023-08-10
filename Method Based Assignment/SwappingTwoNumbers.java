@@ -1,28 +1,26 @@
 import java.util.Scanner;
 
 public class SwappingTwoNumbers{
-    static int swapNumbers(int n){
-        int swapped = 0;
+    static void swapNumbers(int n, int m){
+        System.out.println("Numbers before swapping: ");
+        System.out.println("a = " + n + ", b = " + m);
 
-        while(n > 0){
-            swapped *= 10;
-            swapped += n % 10; 
-            n = n/10;
-        }
+        n += m;
+        m = n - m;
+        n = n - m;
 
-        return swapped;
+        System.out.println("Numbers after swapping: ");
+        System.out.println("a = " + n + ", b = " + m);
     }
 
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
+        System.out.print("Enter two numbers: ");
         int n = sc.nextInt();
+        int m = sc.nextInt();
 
-        int swappedNumber = swapNumbers(n);
-
-        System.out.println("Before swapping: " + n);
-        System.out.println("After  swapping: " + swappedNumber);
+        swapNumbers(n, m);
 
         sc.close();
     }
