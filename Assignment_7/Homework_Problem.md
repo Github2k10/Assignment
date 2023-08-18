@@ -32,8 +32,10 @@
 <br>
 
 
-<h2>Representational State Transfer (REST)</h2>
->REST (Representational State Transfer) is an architectural style for designing networked applications. A RESTful API is a way to build and interact with web services that follow these principles. It's a standardized way for different software applications to communicate and exchange data over the internet.
+**<h2>Representational State Transfer (REST)</h2>**
+>REST (Representational State Transfer) is an architectural style for designing networked applications. 
+>A RESTful API is a way to build and interact with web services that follow these principles. 
+>It's a standardized way for different software applications to communicate and exchange data over the internet.
 > 
 > <b> Key Concepts of RESTful APIs:</b>
 >
