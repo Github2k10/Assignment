@@ -85,7 +85,11 @@
 >  // ... more user objects ...
 > ]
 > </pre>
+> <br>
 >
+> <b> Calling API using Postman: </b> 
+> <br>
+> 
 > <img src="images/postman_1.png"> </img>
 
 <br> <br>
@@ -93,3 +97,17 @@
 # *Homework Problem 2: Unix-Based Commands and Deployment*
 
 
+> <h2> Unix-based commands </h2>
+>
+> $ mkdir -p parent/css parent/js parent/data         <br>
+> $ touch index.html                                  <br>
+> $ echo "Html code here..." > index.html             <br>
+> $ cd ./parent/css                                   <br>
+> $ touch index.css                                   <br>
+> $ echo "css code here..." > index.css               <br>
+> $ cd ../js                                          <br>
+> $ touch index.js                                    <br>
+> $ echo "js code here..." > index.js                 <br>
+> 
+> This script will create the following directory structure and files:
+> <img style="height=100px" src="images/unix_commands1.png"> </img>
