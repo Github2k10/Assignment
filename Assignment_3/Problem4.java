@@ -7,7 +7,7 @@ public class Problem4 {
         System.out.print("Enter your favorite color: ");
         String color = sc.next();
 
-        if(color.toLowerCase().equals("blue"))
+        if(color.equalsIgnoreCase("blue"))
             System.out.println("Blue is a cool color.");
         else
             System.out.println("Your favorite color is nice too!");
