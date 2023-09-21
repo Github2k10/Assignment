@@ -8,7 +8,7 @@ public class Problem1{
 
         System.out.println("Length of the string: " + str.length());
         System.out.println("String in uppercase: " + str.toUpperCase());
-        System.out.println(str.contains("Java") ? "Contains 'Java'" : "Does not contains 'Java'");
+        System.out.println(str.toUpperCase().contains("java") ? "Contains 'Java'" : "Does not contains 'Java'");
         sc.close();
     }
 }
