@@ -1,0 +1,44 @@
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10 (main)
+$ ls
+gitCommands.txt
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10 (main)
+$ mkdir newfolder
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10 (main)
+$ ls
+gitCommands.txt  newfolder/
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10 (main)
+$ touch newfile.txt
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10 (main)
+$ ls
+gitCommands.txt  newfile.txt  newfolder/
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10 (main)
+$ mv newfile.txt ./newfolder/file.txt
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10 (main)
+$ ls
+gitCommands.txt  newfolder/
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10 (main)
+$ cd ./newfolder/
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10/newfolder (main)
+$ ls
+file.txt
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10/newfolder (main)
+$ rm file.txt
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10/newfolder (main)
+$ ls
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10/newfolder (main)
+$ cd ..
+
+ankit@ASUS MINGW64 ~/Documents/FunctionUp/Assignment/Assignment_10 (main)
+$
