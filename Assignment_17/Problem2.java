@@ -15,7 +15,7 @@ public class Problem2 {
             int min = i;
 
             for(int j = i + 1; j < n; j++)
-                if(arr[j] < arr[min]) min = j;
+                if(arr[j] < arr[min]) min = j; 
 
             int k = arr[min];
 
