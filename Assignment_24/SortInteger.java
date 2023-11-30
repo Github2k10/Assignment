@@ -1,7 +1,16 @@
 package Assignment_24;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class SortInteger {
-    public int[] sortByBits(int[] arr) {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        sortByBits(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+    public static int[] sortByBits(int[] arr) {
         int n = arr.length;
         int[] ans = new int[n];
 
@@ -26,7 +35,7 @@ public class SortInteger {
         return arr;
     }
 
-    private int binary(int n){
+    private static int binary(int n){
         if(n == 0) return 0;
         if(n == 1) return 1;
 
@@ -34,7 +43,7 @@ public class SortInteger {
         return t + binary(n/2);
     }
 
-    private void swap(int[] arr, int i, int j){
+    private static void swap(int[] arr, int i, int j){
         int t = arr[i];
         arr[i] = arr[j];
         arr[j] = t;
