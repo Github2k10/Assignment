@@ -2,44 +2,22 @@ package Practice;
 
 public class Main {
     public static void main(String[] args) {
-        // ListNode head = new ListNode(0);
-        // head.next = new ListNode(1);
-        // head.next.next = new ListNode(2);
-        // head.next.next.next = new ListNode(3);
+        Node head = new Node(1);
+        head.left = new Node(2);
+        head.right = new Node(3);
+        
+        head.left.left = new Node(4);
+        head.left.right = new Node(5);
 
-        ListNode head = new ListNode(0);
-        ListNode cur = head;
+        head.right.left = new Node(6);
+        head.right.right = new Node(7);
 
-        for(int i = 1; i <= 10; i++){
-            cur.next = new ListNode(i);
-            cur = cur.next;
-        }
-
-        cur = head;
-        while(cur != null){
-            System.out.println(cur.val);
-            cur = cur.next;
-        }
-        System.out.println(head);
+        BinaryTree tree = new BinaryTree(head);
+        tree.preOrder(head);
+        System.out.println();
+        tree.inOrder(head);
+        System.out.println();
+        tree.postOrder(head);
     }
 }
 
-class ListNode {
-    public int val;
-    public ListNode next;
-
-    public ListNode(){}
-
-    public ListNode(int data){
-        val = data;
-    }
-
-    public ListNode(int data, ListNode pointer){
-        val = data;
-        next = pointer;
-    }
-
-    // public String toString(){
-    //     return "val: " + val + ", next: " + next; 
-    // }
-}
