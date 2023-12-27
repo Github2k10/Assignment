@@ -5,21 +5,24 @@ import java.util.Map;
 
 public class Problem02 {
   public int findPairs(int[] nums, int k) {
-    Map<Integer, Integer> map = new HashMap<>();
-    int c = 0;
-    for (int i : nums)
-      map.put(i, map.getOrDefault(i, 0) + 1);
+    Arrays.sort(nums);
 
-    for (Map.Entry<Integer, Integer> m : map.entrySet()) {
-      int a = m.getKey();
-      int v = m.getValue();
+    int i = 0, j = 1, c = 0, n = nums.length;
 
-      if (k > 0 && map.containsKey(a + k))
+    while (i < n && j < n) {
+      if (i == j || nums[j] - nums[i] < k)
+        j++;
+      else if (nums[j] - nums[i] > k)
+        i++;
+      else {
+        i++;
         c++;
-      else if (k == 0 && v > 1)
-        c++;
+        while (i < n && nums[i] == nums[i - 1])
+          i++;
+      }
     }
 
     return c;
+
   }
 }
