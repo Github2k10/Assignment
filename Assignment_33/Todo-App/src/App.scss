@@ -1,0 +1,86 @@
+.App{
+  padding: 30px 70px;
+
+  .main{
+    display: flex;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 20px;
+
+    .main{
+      display: block;
+    }
+  }
+}
+
+.item{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+
+  margin: 15px 10px;
+}
+
+.work{
+  background-color: var(--work);
+}
+
+.study{
+  background-color: var(--study);
+}
+
+.entertainment{
+  background-color: var(--entertainment);
+}
+
+.other{
+  background-color: var(--other);
+}
+
+input{
+  border: 2px solid var(--light-gray);
+  border-radius: 20px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 5px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--dark-gray);
+
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+  outline: max(1px, 0.07em) solid currentColor;
+  outline-offset: max(1px, 0.07em);
+}
+
+label{
+  font-size: 14px;
+  margin-left: 5px;
+}

@@ -1,0 +1,12 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #69665C;
+  margin-bottom: 20px;
+
+  i{
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
