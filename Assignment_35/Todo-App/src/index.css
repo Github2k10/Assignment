@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Product Sans Bold";
+  src: url(./fonts/ProductSansBold.ttf);
+}
+
+@font-face {
+  font-family: "Product Sans Bold Italic";
+  src: url(./fonts/ProductSansBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Product Sans Italic";
+  src: url(./fonts/ProductSansItalic.ttf);
+}
+
+@font-face {
+  font-family: "Product Sans Regular";
+  src: url(./fonts/ProductSansRegular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Product Sans Regular";
+}
+
+:root {
+  --dark-gray: #69665c;
+  --light-gray: #b2afa1;
+  --yellow: #fff9de; 
+  --work: #d2ceff;
+  --study: #d1e5f7;
+  --entertainment: #ffcece;
+  --other: #d9f1d5;
+}
